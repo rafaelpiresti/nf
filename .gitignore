@@ -1,0 +1,7 @@
+.env
+.idea/
+Homestead.json
+Homestead.yaml
+vendor/
+.phpintel/
+storage/*
