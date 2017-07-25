@@ -1,0 +1,13 @@
+composer:
+  image: 'composer'
+  volumes:
+      - ../:/app
+  working_dir: '/app'
+
+
+nf:
+  image: 'nf:latest'
+  ports:
+    - 5005:80
+  volumes:
+    - ../:/var/www/html/
