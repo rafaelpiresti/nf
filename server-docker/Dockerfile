@@ -23,8 +23,6 @@ CMD mkdir -m 777 /var/www/html/
 COPY default /etc/nginx/sites-enabled/
 COPY 000-default.conf /etc/nginx/sites-available/
 
-RUN service apache2 restart
-
 CMD ["nginx", "-g", "daemon off;"]
 EXPOSE 80
 EXPOSE 8000
